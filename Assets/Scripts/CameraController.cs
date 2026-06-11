@@ -42,6 +42,16 @@ public class CameraController : MonoBehaviour
         Vector3 targetPosition = player.position + offset;
         targetPosition.y = 0;
 
+        if (targetPosition.x < 0)
+        {
+            targetPosition.x = 0;
+        }
+
+        if (targetPosition.x > 22.2f)
+        {
+            targetPosition.x = 22.2f;
+        }
+
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
 }

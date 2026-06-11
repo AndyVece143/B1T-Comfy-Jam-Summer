@@ -1,0 +1,1380 @@
+fileFormatVersion: 2
+guid: 3271d0a53af0b874893df7df75c0e18e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8386037551063892197
+    second: playerbikini_0
+  - first:
+      213: -1682154900644188566
+    second: playerbikini_1
+  - first:
+      213: 8666568759141234821
+    second: playerbikini_2
+  - first:
+      213: 3155971169186116718
+    second: playerbikini_3
+  - first:
+      213: 6403663125461985197
+    second: playerbikini_4
+  - first:
+      213: 652438846697594970
+    second: playerbikini_5
+  - first:
+      213: -619083369832486490
+    second: playerbikini_6
+  - first:
+      213: 8644223643236162248
+    second: playerbikini_7
+  - first:
+      213: 6865754783398110786
+    second: playerbikini_8
+  - first:
+      213: -8932967572664241920
+    second: playerbikini_9
+  - first:
+      213: -1991896538120731127
+    second: playerbikini_10
+  - first:
+      213: -8684099001671516319
+    second: playerbikini_11
+  - first:
+      213: -8936804639311019508
+    second: playerbikini_12
+  - first:
+      213: -1759491122044996212
+    second: playerbikini_13
+  - first:
+      213: 3376238350057197825
+    second: playerbikini_14
+  - first:
+      213: -3651020440739918614
+    second: playerbikini_15
+  - first:
+      213: -655373539941994639
+    second: playerbikini_16
+  - first:
+      213: -1684393284280270314
+    second: playerbikini_17
+  - first:
+      213: 4690152231626318855
+    second: playerbikini_18
+  - first:
+      213: -8675568996633655526
+    second: playerbikini_19
+  - first:
+      213: -8077322803449422071
+    second: playerbikini_20
+  - first:
+      213: -796644541998399051
+    second: playerbikini_21
+  - first:
+      213: -4466352188262524288
+    second: playerbikini_22
+  - first:
+      213: -4174124859835154815
+    second: playerbikini_23
+  - first:
+      213: -2545160053671848514
+    second: playerbikini_24
+  - first:
+      213: -3159337797644547812
+    second: playerbikini_25
+  - first:
+      213: 5661381482839627400
+    second: playerbikini_26
+  - first:
+      213: -6216984804859600986
+    second: playerbikini_27
+  - first:
+      213: -4081444750576292677
+    second: playerbikini_28
+  - first:
+      213: 6179691072086542406
+    second: playerbikini_29
+  - first:
+      213: 487201176183348118
+    second: playerbikini_30
+  - first:
+      213: 2039047724583317090
+    second: playerbikini_31
+  - first:
+      213: -4987881765858881491
+    second: playerbikini_32
+  - first:
+      213: 1991647506386873000
+    second: playerbikini_33
+  - first:
+      213: 3711073139908750675
+    second: playerbikini_34
+  - first:
+      213: 7098052904353384913
+    second: playerbikini_35
+  - first:
+      213: 7141665789012268762
+    second: playerbikini_36
+  - first:
+      213: 6448086961726341344
+    second: playerbikini_37
+  - first:
+      213: 1699206095938729931
+    second: playerbikini_38
+  - first:
+      213: 8138958612334997762
+    second: playerbikini_39
+  - first:
+      213: 5002578030484287263
+    second: playerbikini_40
+  - first:
+      213: 3771150467050608393
+    second: playerbikini_41
+  - first:
+      213: 4765041128146403817
+    second: playerbikini_42
+  - first:
+      213: 8374929880894948756
+    second: playerbikini_43
+  - first:
+      213: 3629602054572108680
+    second: playerbikini_44
+  - first:
+      213: 7358301901851178074
+    second: playerbikini_45
+  - first:
+      213: -6727430114744909812
+    second: playerbikini_46
+  - first:
+      213: 380977500216984053
+    second: playerbikini_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerbikini_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fffb7474fce9b80800000000000000
+      internalID: -8386037551063892197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eabe1c709c7a8e0800000000000000
+      internalID: -1682154900644188566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5887c167e56d54870800000000000000
+      internalID: 8666568759141234821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6476bcae034ccb20800000000000000
+      internalID: 3155971169186116718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_4
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7ed6e3fa16ed850800000000000000
+      internalID: 6403663125461985197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 710
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50631f9caded0900800000000000000
+      internalID: 652438846697594970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a968c684f29867f0800000000000000
+      internalID: -619083369832486490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cadf1eba9376f770800000000000000
+      internalID: 8644223643236162248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2462263699f084f50800000000000000
+      internalID: 6865754783398110786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001b3415259b70480800000000000000
+      internalID: -8932967572664241920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906cbffe6ac5b54e0800000000000000
+      internalID: -1991896538120731127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 620
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7b03e7f1eb7780800000000000000
+      internalID: -8684099001671516319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02cdce97871af380800000000000000
+      internalID: -8936804639311019508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85fd0d85280597e0800000000000000
+      internalID: -1759491122044996212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101d53c24eecade20800000000000000
+      internalID: 3376238350057197825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecc10ac048f45dc0800000000000000
+      internalID: -3651020440739918614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_16
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f219cdc35a7e6f0800000000000000
+      internalID: -655373539941994639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_17
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 530
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612cb647b35df98e0800000000000000
+      internalID: -1684393284280270314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704a79cea94c61140800000000000000
+      internalID: 4690152231626318855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_19
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17424376ff2a9780800000000000000
+      internalID: -8675568996633655526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f1c3ca4b597ef80800000000000000
+      internalID: -8077322803449422071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_21
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b18ee58200c1f4f0800000000000000
+      internalID: -796644541998399051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_22
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ad2d839545402c0800000000000000
+      internalID: -4466352188262524288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_23
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 440
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ef5613e878216c0800000000000000
+      internalID: -4174124859835154815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb510608a66cdacd0800000000000000
+      internalID: -2545160053671848514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c198eed0307c724d0800000000000000
+      internalID: -3159337797644547812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88651ae9674419e40800000000000000
+      internalID: 5661381482839627400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af975c4245d8b9a0800000000000000
+      internalID: -6216984804859600986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_28
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc648faf9bcb57c0800000000000000
+      internalID: -4081444750576292677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 350
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6480f55e94ca2c550800000000000000
+      internalID: 6179691072086542406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b9f8073e2e2c600800000000000000
+      internalID: 487201176183348118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e6bd72a172c4c10800000000000000
+      internalID: 2039047724583317090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_32
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20555cf5fb77cab0800000000000000
+      internalID: -4987881765858881491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_33
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa6bf7dad0c3ab10800000000000000
+      internalID: 1991647506386873000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_34
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d21cfcb51608330800000000000000
+      internalID: 3711073139908750675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_35
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 260
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9c9e86289518260800000000000000
+      internalID: 7098052904353384913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6d2aa623b4c1360800000000000000
+      internalID: 7141665789012268762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_37
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0c682ade43c7950800000000000000
+      internalID: 6448086961726341344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_38
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc73b9401fac49710800000000000000
+      internalID: 1699206095938729931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_39
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20175d16cb363f070800000000000000
+      internalID: 8138958612334997762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_40
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f6034c63abc6540800000000000000
+      internalID: 5002578030484287263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_41
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 170
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907991f8e51d55430800000000000000
+      internalID: 3771150467050608393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e10b47e8a3d02240800000000000000
+      internalID: 4765041128146403817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_43
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4954c89ba5ab93470800000000000000
+      internalID: 8374929880894948756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_44
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b6cc296dfee5230800000000000000
+      internalID: 3629602054572108680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_45
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54bbe10890fd1660800000000000000
+      internalID: 7358301901851178074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_46
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c004d5f34fd53a2a0800000000000000
+      internalID: -6727430114744909812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbikini_47
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 80
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f189d79401894500800000000000000
+      internalID: 380977500216984053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a01c41e4e6c110647aa3065c1a7bd799
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":63.0,"y":89.0},"gridSpriteOffset":{"x":1.0,"y":1.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      playerbikini_0: -8386037551063892197
+      playerbikini_1: -1682154900644188566
+      playerbikini_10: -1991896538120731127
+      playerbikini_11: -8684099001671516319
+      playerbikini_12: -8936804639311019508
+      playerbikini_13: -1759491122044996212
+      playerbikini_14: 3376238350057197825
+      playerbikini_15: -3651020440739918614
+      playerbikini_16: -655373539941994639
+      playerbikini_17: -1684393284280270314
+      playerbikini_18: 4690152231626318855
+      playerbikini_19: -8675568996633655526
+      playerbikini_2: 8666568759141234821
+      playerbikini_20: -8077322803449422071
+      playerbikini_21: -796644541998399051
+      playerbikini_22: -4466352188262524288
+      playerbikini_23: -4174124859835154815
+      playerbikini_24: -2545160053671848514
+      playerbikini_25: -3159337797644547812
+      playerbikini_26: 5661381482839627400
+      playerbikini_27: -6216984804859600986
+      playerbikini_28: -4081444750576292677
+      playerbikini_29: 6179691072086542406
+      playerbikini_3: 3155971169186116718
+      playerbikini_30: 487201176183348118
+      playerbikini_31: 2039047724583317090
+      playerbikini_32: -4987881765858881491
+      playerbikini_33: 1991647506386873000
+      playerbikini_34: 3711073139908750675
+      playerbikini_35: 7098052904353384913
+      playerbikini_36: 7141665789012268762
+      playerbikini_37: 6448086961726341344
+      playerbikini_38: 1699206095938729931
+      playerbikini_39: 8138958612334997762
+      playerbikini_4: 6403663125461985197
+      playerbikini_40: 5002578030484287263
+      playerbikini_41: 3771150467050608393
+      playerbikini_42: 4765041128146403817
+      playerbikini_43: 8374929880894948756
+      playerbikini_44: 3629602054572108680
+      playerbikini_45: 7358301901851178074
+      playerbikini_46: -6727430114744909812
+      playerbikini_47: 380977500216984053
+      playerbikini_5: 652438846697594970
+      playerbikini_6: -619083369832486490
+      playerbikini_7: 8644223643236162248
+      playerbikini_8: 6865754783398110786
+      playerbikini_9: -8932967572664241920
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
