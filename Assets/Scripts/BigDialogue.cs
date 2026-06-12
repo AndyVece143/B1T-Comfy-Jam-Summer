@@ -53,6 +53,7 @@ public class BigDialogue : MonoBehaviour
         canvas.worldCamera = Camera.main;
         mainText.text = string.Empty;
         mainCamera = CameraController.FindAnyObjectByType<CameraController>();
+        mainCamera.state = CameraController.State.StayStill;
 
         nameText.text = names[0];
         player = Player.FindAnyObjectByType<Player>();
@@ -282,7 +283,7 @@ public class BigDialogue : MonoBehaviour
         //    player.state = Player.State.Standard;
         //    mainCamera.state = CameraController.State.FollowPlayer;
         //}
-        player.state = Player.State.Standard;
+        player.StartMoving();
         mainCamera.state = CameraController.State.FollowPlayer;
 
         Destroy(gameObject);

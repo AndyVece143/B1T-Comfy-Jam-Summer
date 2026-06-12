@@ -98,6 +98,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "RoomTransition")
+        {
+            StartCoroutine(collision.gameObject.GetComponent<RoomTrigger>().BeginRoomTransition());
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Inspect" && state != State.NoMove)

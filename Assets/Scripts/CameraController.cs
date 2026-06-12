@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     }
     public State state;
     public State initialState;
-
+    public int roomNumber;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,15 +42,35 @@ public class CameraController : MonoBehaviour
         Vector3 targetPosition = player.position + offset;
         targetPosition.y = 0;
 
-        if (targetPosition.x < 0)
+        switch (roomNumber)
         {
-            targetPosition.x = 0;
+            //Boardwalk
+            case 0:
+                if (targetPosition.x < 0)
+                {
+                    targetPosition.x = 0;
+                }
+
+                if (targetPosition.x > 22.2f)
+                {
+                    targetPosition.x = 22.2f;
+                }
+                break;
+
+            //Beach
+            case 1:
+                if (targetPosition.x < 47.22f)
+                {
+                    targetPosition.x = 47.22f;
+                }
+
+                if (targetPosition.x > 72.78f)
+                {
+                    targetPosition.x = 72.78f;
+                }
+                break;
         }
 
-        if (targetPosition.x > 22.2f)
-        {
-            targetPosition.x = 22.2f;
-        }
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
