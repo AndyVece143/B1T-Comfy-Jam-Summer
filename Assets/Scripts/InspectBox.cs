@@ -21,6 +21,8 @@ public class InspectBox : MonoBehaviour
     public bool ready = false;
     public CameraController mainCamera;
 
+    public ChangingRoom room;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -135,6 +137,11 @@ public class InspectBox : MonoBehaviour
         if (interactableObject)
         {
             interactableObject.interactable = true;
+        }
+
+        if (room)
+        {
+            room.interactable = true;
         }
 
         player.StartMoving();

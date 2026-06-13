@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Inspect
   - RoomTransition
+  - Inspect2
+  - Sandwich
   layers:
   - Default
   - TransparentFX

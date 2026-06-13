@@ -31,6 +31,9 @@ public class SoloBigDialogue : MonoBehaviour
     private bool ending = false;
     public Player player;
     public bool sceneTransition;
+    public bool canMove;
+    public bool isChanging;
+    public ChangingRoom room;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +46,10 @@ public class SoloBigDialogue : MonoBehaviour
 
         nameText.text = "Lucy";
         player = Player.FindAnyObjectByType<Player>();
+        if (isChanging)
+        {
+            room = ChangingRoom.FindAnyObjectByType<ChangingRoom>();
+        }
         BeginningSprite();
         SetPositions();
     }
@@ -167,10 +174,17 @@ public class SoloBigDialogue : MonoBehaviour
         //}
 
 
-
         //gameUI.SetActive(true);
-        player.StartMoving();
-        mainCamera.state = CameraController.State.FollowPlayer;
+        if (canMove)
+        {
+            player.StartMoving();
+            mainCamera.state = CameraController.State.FollowPlayer;
+        }
+
+        if (isChanging)
+        {
+            room.TriggerChangeClothes();
+        }
 
         Destroy(gameObject);
         //player.state = Player.State.Standard;

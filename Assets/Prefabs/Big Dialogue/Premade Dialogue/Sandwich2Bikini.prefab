@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 221.25}
+  m_AnchoredPosition: {x: -580, y: 221.25}
   m_SizeDelta: {x: 498.83, y: 637.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6333688992862293890
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4334783836991956000, guid: 4046780a405a8144c8cd9b9c139270f0, type: 3}
+  m_Sprite: {fileID: -8386037551063892197, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c62fc6a285724ca60622bb36e0b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Portrait
-  isActiveSpeaker: 0
+  isActiveSpeaker: 1
   image: {fileID: 2258890832858552169}
   anim: {fileID: 1631886397355277674}
 --- !u!95 &1631886397355277674
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 1742212809337288167}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6db0892f33c2026439c93982eb79edf5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ac5ebb20c223d34798df758354557ff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -191,6 +191,120 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2955332954277161803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5741086998766934215}
+  - component: {fileID: 49956406995771448}
+  - component: {fileID: 5277402318268672882}
+  - component: {fileID: 2222696877393413579}
+  - component: {fileID: 4409281030890271955}
+  m_Layer: 5
+  m_Name: Character2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5741086998766934215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955332954277161803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8900742164445573364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 580, y: 221.25}
+  m_SizeDelta: {x: 498.83, y: 637.49}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &49956406995771448
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955332954277161803}
+  m_CullTransparentMesh: 1
+--- !u!114 &5277402318268672882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955332954277161803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2401008423473213939, guid: c9b7a54e95a9b17468db772e9e8b9d4e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2222696877393413579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955332954277161803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3c62fc6a285724ca60622bb36e0b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Portrait
+  isActiveSpeaker: 0
+  image: {fileID: 5277402318268672882}
+  anim: {fileID: 4409281030890271955}
+--- !u!95 &4409281030890271955
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955332954277161803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e798c826c76dd47a294e7b0738214e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4897459724401937862
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,9 +454,9 @@ GameObject:
   - component: {fileID: 7608952189759109841}
   - component: {fileID: 764234832075199280}
   - component: {fileID: 8074259429549995982}
-  - component: {fileID: 5758228176192100431}
+  - component: {fileID: 7026749355492441099}
   m_Layer: 5
-  m_Name: Beach1
+  m_Name: Sandwich2Bikini
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,6 +476,7 @@ RectTransform:
   m_Children:
   - {fileID: 210655537583092492}
   - {fileID: 1354623616932005546}
+  - {fileID: 5741086998766934215}
   - {fileID: 4170637391939378399}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -433,7 +548,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5758228176192100431
+--- !u!114 &7026749355492441099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,29 +557,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 4976806853408612784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25af376044baca1488e0dd588efe48d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba98c0efd08b524cb60106c7ac329ab, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoloBigDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::BigDialogue
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - 'Alright, the beach! I finally made it! This is gonna be great! '
-  - Let's have a look around first. This place seems interesting.
+  - Thanks for the sandwich! Next time I come here, I'll definitely get another one!
+  - Awesome. Thank you for your patronage! I'm sure our menu will be even bigger
+    by then!
   textSpeed: 0.01
-  emotionChanges: 0100000000000000
+  talkChanges: 0001
+  emotionChanges: 0100000001000000
+  names:
+  - Lucy
+  - Young Girl
+  character1Talking: 1
   canvas: {fileID: 0}
   character1: {fileID: 8589296088205470195}
+  character2: {fileID: 2222696877393413579}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  darkColor: {r: 0.25943398, g: 0.25943398, b: 0.25943398, a: 1}
   duration: 0.2
   moveDuration: 1
   textBox: {fileID: 2580527548192940109}
-  mainCamera: {fileID: 0}
-  ready: 0
   audioClip: {fileID: 8300000, guid: b67effe301ab3b94da136c7b134946e2, type: 3}
+  ready: 0
   player: {fileID: 0}
-  sceneTransition: 0
+  mainCamera: {fileID: 0}
   canMove: 1
-  isChanging: 0
-  room: {fileID: 0}
+  sandwich: 1
+  shop: {fileID: 0}
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,12 +728,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is a solo big dialogue box
+  m_text: 'This is a big dialogue box
 
-    For when you just need to talk to
-    yourself.
+    Call her ben the way she''s drowning
 
-    Go see a doctor...'
+    Grab
+    air bubbles!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cf0e2c2429ef85643ac6c94539f0dedf, type: 2}
   m_sharedMaterial: {fileID: 437300246477488682, guid: cf0e2c2429ef85643ac6c94539f0dedf, type: 2}

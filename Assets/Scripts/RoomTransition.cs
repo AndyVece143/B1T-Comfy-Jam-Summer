@@ -8,4 +8,9 @@ public class RoomTransition : MonoBehaviour
     {
         anim.Play("trans");
     }
+
+    public void FadeToBlack()
+    {
+        anim.Play("changing");
+    }
 }

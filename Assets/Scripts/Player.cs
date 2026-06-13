@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public bool bikini;
     public float speed;
     private Rigidbody2D body;
     public BoxCollider2D boxCollider;
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
                 break;
         }
         IconRotations();
+        anim.SetBool("bikini", bikini);
     }
 
     private void Movement()
@@ -121,13 +123,42 @@ public class Player : MonoBehaviour
                 inspectIcon.color = Color.gray;
             }
         }
+        if (collision.gameObject.tag == "Inspect2" && state != State.NoMove)
+        {
+            inspectIcon.enabled = true;
+
+            if (collision.gameObject.GetComponent<ChangingRoom>().checker == false)
+            {
+                inspectIcon.color = Color.white;
+            }
+            else
+            {
+                inspectIcon.color = Color.gray;
+            }
+        }
+        if (collision.gameObject.tag == "Sandwich" && state != State.NoMove)
+        {
+            talkIcon.enabled = true;
+            if (collision.gameObject.GetComponent<SandwichShop>().checker == false)
+            {
+                talkIcon.color = Color.white;
+            }
+            else
+            {
+                talkIcon.color = Color.gray;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Inspect")
+        if (collision.gameObject.tag == "Inspect" || collision.gameObject.tag == "Inspect2")
         {
             inspectIcon.enabled = false;
+        }
+        if (collision.gameObject.tag == "Sandwich")
+        {
+            talkIcon.enabled = false;
         }
     }
 }

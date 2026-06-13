@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 8074259429549995982}
   - component: {fileID: 5758228176192100431}
   m_Layer: 5
-  m_Name: Beach1
+  m_Name: Beach2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,8 +448,8 @@ MonoBehaviour:
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - 'Alright, the beach! I finally made it! This is gonna be great! '
-  - Let's have a look around first. This place seems interesting.
+  - Alright, here is the changing room.
+  - Nice, it appears to be unoccupied. Time to get changed.
   textSpeed: 0.01
   emotionChanges: 0100000000000000
   canvas: {fileID: 0}
@@ -462,8 +462,8 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: b67effe301ab3b94da136c7b134946e2, type: 3}
   player: {fileID: 0}
   sceneTransition: 0
-  canMove: 1
-  isChanging: 0
+  canMove: 0
+  isChanging: 1
   room: {fileID: 0}
 --- !u!1 &5780813498153750811
 GameObject:

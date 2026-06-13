@@ -45,6 +45,9 @@ public class BigDialogue : MonoBehaviour
 
     private bool ending = false;
     public CameraController mainCamera;
+    public bool canMove;
+    public bool sandwich;
+    public SandwichShop shop;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -57,6 +60,10 @@ public class BigDialogue : MonoBehaviour
 
         nameText.text = names[0];
         player = Player.FindAnyObjectByType<Player>();
+        if (sandwich)
+        {
+            shop = SandwichShop.FindAnyObjectByType<SandwichShop>();
+        }
         BeginningSprite();
         SetPositions();
     }
@@ -283,8 +290,16 @@ public class BigDialogue : MonoBehaviour
         //    player.state = Player.State.Standard;
         //    mainCamera.state = CameraController.State.FollowPlayer;
         //}
-        player.StartMoving();
-        mainCamera.state = CameraController.State.FollowPlayer;
+        if (canMove)
+        {
+            player.StartMoving();
+            mainCamera.state = CameraController.State.FollowPlayer;
+        }
+
+        if (sandwich)
+        {
+            shop.UpdateSandwich();
+        }
 
         Destroy(gameObject);
     }
