@@ -4,6 +4,7 @@ public class BeachManager : MonoBehaviour
 {
     public int progress;
     public ChangingRoom room;
+    public BroTalking bro;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,5 +21,6 @@ public class BeachManager : MonoBehaviour
     {
         progress++;
         room.checker = false;
+        bro.ChangeChecker();
     }
 }

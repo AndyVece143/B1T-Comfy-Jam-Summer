@@ -100,13 +100,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "RoomTransition")
-        {
-            StartCoroutine(collision.gameObject.GetComponent<RoomTrigger>().BeginRoomTransition());
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "RoomTransition")
+    //    {
+    //        StartCoroutine(collision.gameObject.GetComponent<RoomTrigger>().BeginRoomTransition());
+    //    }
+    //}
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -148,6 +148,22 @@ public class Player : MonoBehaviour
                 talkIcon.color = Color.gray;
             }
         }
+        if (collision.gameObject.tag == "Bro" && state != State.NoMove)
+        {
+            talkIcon.enabled = true;
+            if (collision.gameObject.GetComponent<BroTalking>().checker == false)
+            {
+                talkIcon.color = Color.white;
+            }
+            else
+            {
+                talkIcon.color = Color.gray;
+            }
+        }
+        if (collision.gameObject.tag == "RoomTransition" && state != State.NoMove)
+        {
+            goIcon.enabled = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -156,9 +172,14 @@ public class Player : MonoBehaviour
         {
             inspectIcon.enabled = false;
         }
-        if (collision.gameObject.tag == "Sandwich")
+        if (collision.gameObject.tag == "Sandwich" || (collision.gameObject.tag == "Bro"))
         {
             talkIcon.enabled = false;
+        }
+
+        if (collision.gameObject.tag == "RoomTransition")
+        {
+            goIcon.enabled = false;
         }
     }
 }

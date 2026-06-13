@@ -580,6 +580,11 @@ MonoBehaviour:
   ready: 0
   player: {fileID: 0}
   mainCamera: {fileID: 0}
+  canMove: 0
+  sandwich: 0
+  shop: {fileID: 0}
+  bro: {fileID: 0}
+  dampSpeed: 7
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

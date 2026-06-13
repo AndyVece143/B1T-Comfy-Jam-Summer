@@ -23,6 +23,9 @@ public class InspectBox : MonoBehaviour
 
     public ChangingRoom room;
 
+    public RoomTriggerAgain caveEntrance;
+    public float dampSpeed = 7.0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -119,7 +122,8 @@ public class InspectBox : MonoBehaviour
         while (time < duration)
         {
             time += Time.deltaTime;
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, time / duration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, t);
             yield return null;
         }
         StartDialogue();
@@ -131,7 +135,8 @@ public class InspectBox : MonoBehaviour
         while (time < duration)
         {
             time += Time.deltaTime;
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, time / duration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, t);
             yield return null;
         }
         if (interactableObject)
@@ -142,6 +147,11 @@ public class InspectBox : MonoBehaviour
         if (room)
         {
             room.interactable = true;
+        }
+
+        if (caveEntrance)
+        {
+            caveEntrance.interactable = true;
         }
 
         player.StartMoving();

@@ -34,6 +34,7 @@ public class SoloBigDialogue : MonoBehaviour
     public bool canMove;
     public bool isChanging;
     public ChangingRoom room;
+    public float dampSpeed = 7.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -150,8 +151,11 @@ public class SoloBigDialogue : MonoBehaviour
         while (time < moveDuration)
         {
             time += Time.deltaTime;
-            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, time / moveDuration);
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, time / moveDuration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            //character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, time / moveDuration);
+            //textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, time / moveDuration);
+            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, t);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, t);
             yield return null;
         }
         StartDialogue();
@@ -164,8 +168,9 @@ public class SoloBigDialogue : MonoBehaviour
         while (time < moveDuration)
         {
             time += Time.deltaTime;
-            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1EndPosition, time / moveDuration);
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, time / moveDuration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1EndPosition, t);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, t);
             yield return null;
         }
         //if (sceneTransition)

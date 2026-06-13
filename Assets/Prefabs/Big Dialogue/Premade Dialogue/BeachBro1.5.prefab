@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c62fc6a285724ca60622bb36e0b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Portrait
-  isActiveSpeaker: 1
+  isActiveSpeaker: 0
   image: {fileID: 2258890832858552169}
   anim: {fileID: 1631886397355277674}
 --- !u!95 &1631886397355277674
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2401008423473213939, guid: c9b7a54e95a9b17468db772e9e8b9d4e, type: 3}
+  m_Sprite: {fileID: -8838733784046698314, guid: 34c20a33dd18aad44851f6a60793a09d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c62fc6a285724ca60622bb36e0b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Portrait
-  isActiveSpeaker: 0
+  isActiveSpeaker: 1
   image: {fileID: 5277402318268672882}
   anim: {fileID: 4409281030890271955}
 --- !u!95 &4409281030890271955
@@ -293,7 +293,7 @@ Animator:
   m_GameObject: {fileID: 2955332954277161803}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8e798c826c76dd47a294e7b0738214e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 470ebba1e221e724b9ec70a6f91cda0b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 8074259429549995982}
   - component: {fileID: 7026749355492441099}
   m_Layer: 5
-  m_Name: Sandwich2
+  m_Name: BeachBro1.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,16 +563,20 @@ MonoBehaviour:
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - Thanks for the sandwich! Next time I come here, I'll definitely get another one!
-  - Awesome. Thank you for your patronage! I'm sure our menu will be even bigger
-    by then!
+  - Lucy Goosey! Are you really gonna go into the cave in normal clothes?
+  - Don't call me that. And no, I haven't gotten changed yet, I'm still looking around.
+  - All good, all good. You should get ready as soon as you can, or else someone
+    may get to the prize before you!
+  - Well I certainly can't let that happe. I'll be back shortly.
   textSpeed: 0.01
-  talkChanges: 0001
-  emotionChanges: 0100000001000000
+  talkChanges: 00010101
+  emotionChanges: 00000000030000000200000000000000
   names:
+  - Big Jay
   - Lucy
-  - Young Girl
-  character1Talking: 1
+  - Big Jay
+  - Lucy
+  character1Talking: 0
   canvas: {fileID: 0}
   character1: {fileID: 8589296088205470195}
   character2: {fileID: 2222696877393413579}
@@ -586,7 +590,7 @@ MonoBehaviour:
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   canMove: 1
-  sandwich: 1
+  sandwich: 0
   shop: {fileID: 0}
   bro: {fileID: 0}
   dampSpeed: 7

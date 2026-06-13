@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2401008423473213939, guid: c9b7a54e95a9b17468db772e9e8b9d4e, type: 3}
+  m_Sprite: {fileID: -8838733784046698314, guid: 34c20a33dd18aad44851f6a60793a09d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -293,7 +293,7 @@ Animator:
   m_GameObject: {fileID: 2955332954277161803}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8e798c826c76dd47a294e7b0738214e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 470ebba1e221e724b9ec70a6f91cda0b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 8074259429549995982}
   - component: {fileID: 7026749355492441099}
   m_Layer: 5
-  m_Name: Sandwich2
+  m_Name: BeachBro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,15 +563,58 @@ MonoBehaviour:
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - Thanks for the sandwich! Next time I come here, I'll definitely get another one!
-  - Awesome. Thank you for your patronage! I'm sure our menu will be even bigger
-    by then!
+  - (Oh boy, that guy looks like a lively character. Maybe I should steer clear of...)
+  - Yo, yellow haired lady! I have a proposition for you!
+  - (...what kind of greeting is that? How can I get out of this?)
+  - Sorry, I'm not interested in whatever you are selling, so...
+  - Oh, don't worry, lass. I'm just here to offer you a... challenge.
+  - ...what kind of challenge?
+  - See that cave behind us? In it lies a big underwater cave system, with paths
+    everywhere!
+  - I recently got permission from the city to start a business where anyone can
+    explore the cave!
+  - The best part? If you can manage to get to the end, there will be a grand prize
+    waiting for you!
+  - 'So, what do you say? Are you up to the challenge? '
+  - That sounds like the most dangerous thing ever. I didn't come to the beach to
+    pass away in a cave.
+  - 'Oh, don''t you worry your pretty little head! This is totally safe! '
+  - You'll be given a state of the art underwater breathing apparatus, so you'll
+    always have air!
+  - Okay... that's much better. What's the prize?
+  - Now why would I spoil the mystery? That's for you to discover! So, are you in?
+  - (This seems a bit sketchy, but he did say it would be safe. And I did come to
+    the beach to have fun.)
+  - Oh, what the hell, I'm in!
+  - Amazing, it's great to have you! You won't regret this!
+  - You can call me Big Jay!
+  - And I'm Lucy. I'm looking forward to this.
+  - (If I'm gonna go underwater cave diving, I better get changed into my swimsuit.)
   textSpeed: 0.01
-  talkChanges: 0001
-  emotionChanges: 0100000001000000
+  talkChanges: 000101000101010000000101000101010001000100
+  emotionChanges: 030000000200000004000000030000000000000007000000000000000000000002000000000000000300000002000000020000000700000000000000070000000000000005000000020000000100000000000000
   names:
   - Lucy
-  - Young Girl
+  - Bro Guy
+  - Lucy
+  - Lucy
+  - Bro Guy
+  - Lucy
+  - Bro Guy
+  - Bro Guy
+  - Bro Guy
+  - Bro Guy
+  - Lucy
+  - Bro Guy
+  - Bro Guy
+  - Lucy
+  - Bro Guy
+  - Lucy
+  - Lucy
+  - Bro Guy
+  - Big Jay
+  - Lucy
+  - Lucy
   character1Talking: 1
   canvas: {fileID: 0}
   character1: {fileID: 8589296088205470195}
@@ -586,7 +629,7 @@ MonoBehaviour:
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   canMove: 1
-  sandwich: 1
+  sandwich: 0
   shop: {fileID: 0}
   bro: {fileID: 0}
   dampSpeed: 7

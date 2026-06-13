@@ -69,6 +69,11 @@ public class CameraController : MonoBehaviour
                     targetPosition.x = 72.78f;
                 }
                 break;
+
+            //Cave
+            case 2:
+                targetPosition.x = 100;
+                break;
         }
 
 

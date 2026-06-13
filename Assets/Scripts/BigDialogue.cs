@@ -48,6 +48,8 @@ public class BigDialogue : MonoBehaviour
     public bool canMove;
     public bool sandwich;
     public SandwichShop shop;
+    public BroTalking bro;
+    public float dampSpeed = 7.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -261,9 +263,16 @@ public class BigDialogue : MonoBehaviour
         while (time < moveDuration)
         {
             time += Time.deltaTime;
-            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, time / moveDuration);
-            character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2Position, time / moveDuration);
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, time / moveDuration);
+
+            //float t = Mathf.Clamp01(time / moveDuration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            //character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, time / moveDuration);
+            //character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2Position, time / moveDuration);
+            //textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, time / moveDuration);
+
+            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1Position, t);
+            character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2Position, t);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxPosition, t);
             yield return null;
         }
         StartDialogue();
@@ -276,9 +285,13 @@ public class BigDialogue : MonoBehaviour
         while (time < moveDuration)
         {
             time += Time.deltaTime;
-            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1EndPosition, time / moveDuration);
-            character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2EndPosition, time / moveDuration);
-            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, time / moveDuration);
+            float t = 1.0f - Mathf.Exp(-dampSpeed * Time.deltaTime);
+            //character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1EndPosition, time / moveDuration);
+            //character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2EndPosition, time / moveDuration);
+            //textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, time / moveDuration);
+            character1.gameObject.transform.position = Vector3.Lerp(character1.gameObject.transform.position, character1EndPosition, t);
+            character2.gameObject.transform.position = Vector3.Lerp(character2.gameObject.transform.position, character2EndPosition, t);
+            textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, t);
             yield return null;
         }
         //if (sceneTransition)
@@ -299,6 +312,11 @@ public class BigDialogue : MonoBehaviour
         if (sandwich)
         {
             shop.UpdateSandwich();
+        }
+
+        if (bro)
+        {
+            bro.interactable = true;
         }
 
         Destroy(gameObject);

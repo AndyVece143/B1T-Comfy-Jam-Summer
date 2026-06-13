@@ -17,6 +17,14 @@ public class RoomTrigger : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == player.gameObject)
+        {
+            StartCoroutine(BeginRoomTransition());
+        }
+    }
+
     public IEnumerator BeginRoomTransition()
     {
         player.StopMoving(1);

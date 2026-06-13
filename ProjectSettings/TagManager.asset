@@ -8,6 +8,7 @@ TagManager:
   - RoomTransition
   - Inspect2
   - Sandwich
+  - Bro
   layers:
   - Default
   - TransparentFX

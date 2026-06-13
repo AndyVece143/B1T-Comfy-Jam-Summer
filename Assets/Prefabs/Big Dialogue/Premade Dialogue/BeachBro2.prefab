@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4334783836991956000, guid: 4046780a405a8144c8cd9b9c139270f0, type: 3}
+  m_Sprite: {fileID: -8386037551063892197, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 1742212809337288167}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6db0892f33c2026439c93982eb79edf5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ac5ebb20c223d34798df758354557ff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2401008423473213939, guid: c9b7a54e95a9b17468db772e9e8b9d4e, type: 3}
+  m_Sprite: {fileID: -8838733784046698314, guid: 34c20a33dd18aad44851f6a60793a09d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -293,7 +293,7 @@ Animator:
   m_GameObject: {fileID: 2955332954277161803}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8e798c826c76dd47a294e7b0738214e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 470ebba1e221e724b9ec70a6f91cda0b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 8074259429549995982}
   - component: {fileID: 7026749355492441099}
   m_Layer: 5
-  m_Name: Sandwich2
+  m_Name: BeachBro2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,15 +563,36 @@ MonoBehaviour:
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - Thanks for the sandwich! Next time I come here, I'll definitely get another one!
-  - Awesome. Thank you for your patronage! I'm sure our menu will be even bigger
-    by then!
+  - Alright, I'm ready.
+  - Lucy! You're back! And looking greater than ever!
+  - Say, after this whole cave diving adventure, why don't the two of us-
+  - I appreciate the thought, but I must decline. You're not my type.
+  - Ouch! You're a tough gal. Lesson learned.
+  - Anyway, when you enter the cave, you'll find a box with the underwater breathing
+    apparatus. It's super easy to use.
+  - Once that's done, just dive into the water and have fun!
+  - But, once you enter the cave, you won't be able to leave.
+  - ...why's that? Is the entrance gonna cave in? Is this some ploy to kill me?
+  - Goodness, no! It's about pride! You wouldn't wanna accept a challenge and quit
+    immediately, right?
+  - ...I guess so. You make a fair point.
+  - (I should take care of everything before I enter the cave.)
   textSpeed: 0.01
-  talkChanges: 0001
-  emotionChanges: 0100000001000000
+  talkChanges: 000100010100000001010100
+  emotionChanges: 000000000200000000000000020000000200000000000000020000000100000004000000020000000700000000000000
   names:
   - Lucy
-  - Young Girl
+  - Big Jay
+  - Big Jay
+  - Lucy
+  - Big Jay
+  - Big Jay
+  - Big Jay
+  - Big Jay
+  - Lucy
+  - Big Jay
+  - Lucy
+  - Lucy
   character1Talking: 1
   canvas: {fileID: 0}
   character1: {fileID: 8589296088205470195}
@@ -586,7 +607,7 @@ MonoBehaviour:
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   canMove: 1
-  sandwich: 1
+  sandwich: 0
   shop: {fileID: 0}
   bro: {fileID: 0}
   dampSpeed: 7
