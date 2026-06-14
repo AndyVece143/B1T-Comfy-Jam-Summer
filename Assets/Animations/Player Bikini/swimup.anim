@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: swim
+  m_Name: swimup
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,21 +22,21 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -2545160053671848514, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.083333336
+    - time: 0.06666667
       value: {fileID: -3159337797644547812, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.16666667
+    - time: 0.13333334
       value: {fileID: 5661381482839627400, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.25
+    - time: 0.2
       value: {fileID: -6216984804859600986, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.33333334
+    - time: 0.26666668
       value: {fileID: -4081444750576292677, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.41666666
+    - time: 0.33333334
       value: {fileID: 6179691072086542406, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.5
+    - time: 0.4
       value: {fileID: 487201176183348118, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.5833333
+    - time: 0.46666667
       value: {fileID: 2039047724583317090, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
-    - time: 0.6666667
+    - time: 0.53333336
       value: {fileID: -2545160053671848514, guid: 3271d0a53af0b874893df7df75c0e18e, type: 3}
     attribute: m_Sprite
     path: 
@@ -74,7 +74,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.55
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

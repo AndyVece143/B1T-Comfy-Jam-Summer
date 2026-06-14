@@ -32,6 +32,8 @@ public class CameraController : MonoBehaviour
             case State.FollowPlayer:
                 FollowPlayer();
                 break;
+            case State.FollowPlayerSwimming:
+                break;
             case State.StayStill:
                 break;
         }
@@ -78,5 +80,10 @@ public class CameraController : MonoBehaviour
 
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+    }
+
+    private void FollowPlayerSwimming()
+    {
+
     }
 }
