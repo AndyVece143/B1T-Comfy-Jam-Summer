@@ -31,6 +31,8 @@ public class SoloBigDialogue : MonoBehaviour
     private bool ending = false;
     public Player player;
     public bool sceneTransition;
+    public string sceneName;
+    public LevelLoader loader;
     public bool canMove;
     public bool isChanging;
     public ChangingRoom room;
@@ -51,6 +53,11 @@ public class SoloBigDialogue : MonoBehaviour
         {
             room = ChangingRoom.FindAnyObjectByType<ChangingRoom>();
         }
+        if (sceneTransition)
+        {
+            loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+        }
+
         BeginningSprite();
         SetPositions();
     }
@@ -173,10 +180,10 @@ public class SoloBigDialogue : MonoBehaviour
             textBox.transform.position = Vector3.Lerp(textBox.transform.position, textBoxEndPosition, t);
             yield return null;
         }
-        //if (sceneTransition)
-        //{
-        //    loader.LoadNextLevel(sceneName);
-        //}
+        if (sceneTransition)
+        {
+            loader.LoadNextLevel(sceneName);
+        }
 
 
         //gameUI.SetActive(true);
