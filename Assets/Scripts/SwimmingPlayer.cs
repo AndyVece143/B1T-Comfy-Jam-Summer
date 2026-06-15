@@ -9,6 +9,7 @@ public class SwimmingPlayer : MonoBehaviour
     public BoxCollider2D boxCollider;
     [SerializeField] private LayerMask groundLayer;
 
+
     public enum State
     {
         Standard,
@@ -22,6 +23,8 @@ public class SwimmingPlayer : MonoBehaviour
     public float air;
     public CameraController mainCamera;
     private float deathTime;
+    public AudioClip swim;
+    public AudioClip drowning;
 
     private void Awake()
     {
@@ -68,6 +71,7 @@ public class SwimmingPlayer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                SoundManager.instance.PlaySound(swim);
                 SwimForceMethod();
                 swimTimer = swimCooldown;
             }
@@ -153,6 +157,7 @@ public class SwimmingPlayer : MonoBehaviour
     private void BenDrowned()
     {
         Debug.Log("Ben Drowned");
+        SoundManager.instance.PlaySound(drowning);
         mainCamera.state = CameraController.State.StayStill;
         boxCollider.enabled = false;
         body.linearVelocity = new Vector2(0, 0);
