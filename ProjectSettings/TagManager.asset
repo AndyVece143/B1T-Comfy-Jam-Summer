@@ -9,6 +9,8 @@ TagManager:
   - Inspect2
   - Sandwich
   - Bro
+  - Breathing
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - GroundLayer
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 

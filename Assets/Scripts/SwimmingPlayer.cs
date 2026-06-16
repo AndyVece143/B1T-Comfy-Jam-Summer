@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
@@ -7,14 +8,16 @@ public class SwimmingPlayer : MonoBehaviour
     public float speed;
     private Rigidbody2D body;
     public BoxCollider2D boxCollider;
-    [SerializeField] private LayerMask groundLayer;
+    public BoxCollider2D breathingSpot;
 
+    [SerializeField] private LayerMask groundLayer;
 
     public enum State
     {
         Standard,
         HitStun,
         Drowning,
+        Breathing,
     }
     public State state;
     public Animator anim;
@@ -25,6 +28,19 @@ public class SwimmingPlayer : MonoBehaviour
     private float deathTime;
     public AudioClip swim;
     public AudioClip drowning;
+    private float breathingTimer;
+    public float breathingTimerMax;
+
+    private float hitStunTime;
+    private float iFrameTimer;
+    public bool iFrames;
+    [SerializeField] private AudioClip hurtSound;
+
+    public Transform mouth;
+    public float bubbleTimer;
+    public SmallBubble smallBubble;
+    public SmallerBubble smallerBubble;
+    public float smallerBubbleTimer;
 
     private void Awake()
     {
@@ -48,17 +64,25 @@ public class SwimmingPlayer : MonoBehaviour
                 HoldingBreath();
                 break;
             case State.HitStun:
+                HitStun();
                 break;
             case State.Drowning:
                 Drowning();
+                break;
+            case State.Breathing:
+                Breathing();
                 break;
         }
     }
 
     private void Movement()
     {
+        anim.SetBool("breathing", false);
+        breathingTimer = breathingTimerMax;
         boxCollider.enabled = true;
         deathTime = 0;
+        hitStunTime = 0;
+        transform.rotation = new Quaternion(0, 0, 0, 0);
 
         float horizontalInput = Input.GetAxis("Horizontal");
 
@@ -77,6 +101,30 @@ public class SwimmingPlayer : MonoBehaviour
             }
         }
 
+        iFrameTimer -= Time.deltaTime;
+        if (iFrameTimer < 0)
+        {
+            iFrames = false;
+        }
+
+        if (iFrames)
+        {
+            GetComponent<SpriteRenderer>().color = Color.gray;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+            Physics2D.IgnoreLayerCollision(6, 7, false);
+        }
+
+        smallerBubbleTimer -= Time.deltaTime;
+        if (smallerBubbleTimer < 0)
+        {
+            SmallerBubble newSmallerBubble = Instantiate(smallerBubble);
+            newSmallerBubble.transform.position = mouth.position;
+            smallerBubbleTimer = 1.4f;
+        }
+
         //Flip Sprite
         if (horizontalInput > 0.01f)
         {
@@ -93,6 +141,38 @@ public class SwimmingPlayer : MonoBehaviour
         anim.SetBool("grounded", IsGrounded());
         anim.SetBool("swimming", AmISwimming());
         anim.SetBool("danger", AmIDying());
+    }
+
+    private void HitStun()
+    {
+        anim.SetBool("hurt", true);
+        anim.SetBool("swimming", false);
+        if (IsFacingRight())
+        {
+            body.linearVelocity = new Vector2(-4f, 0f);
+        }
+        else
+        {
+            body.linearVelocity = new Vector2(4f, 0f);
+        }
+        transform.Rotate(Vector3.forward * 360 * Time.deltaTime);
+        hitStunTime += Time.deltaTime;
+        if (hitStunTime > 1)
+        {
+            anim.SetBool("hurt", false);
+            state = State.Standard;
+            iFrameTimer = 3;
+        }
+    }
+
+    private void KnockBack()
+    {
+        air -= 5;
+        anim.SetBool("swimming", false);
+        SoundManager.instance.PlaySound(hurtSound);
+        Physics2D.IgnoreLayerCollision(6, 7);
+        state = State.HitStun;
+        iFrames = true;
     }
 
     private void SwimForceMethod()
@@ -137,8 +217,6 @@ public class SwimmingPlayer : MonoBehaviour
         if (air <= 0)
         {
             BenDrowned();
-
-
         }
     }
 
@@ -161,6 +239,7 @@ public class SwimmingPlayer : MonoBehaviour
         mainCamera.state = CameraController.State.StayStill;
         boxCollider.enabled = false;
         body.linearVelocity = new Vector2(0, 0);
+        bubbleTimer = 0;
         state = State.Drowning;
     }
 
@@ -168,12 +247,52 @@ public class SwimmingPlayer : MonoBehaviour
     {
         anim.SetBool("drowning", true);
         anim.SetBool("swimming", false);
+        anim.SetBool("hurt", false);
         transform.Rotate(Vector3.forward * (30 * Time.deltaTime));
         deathTime += Time.deltaTime;
         
         if (deathTime >= 3)
         {
             //Debug.Log("Respawn");
+        }
+
+        bubbleTimer += Time.deltaTime;
+        if (bubbleTimer >= 0.2f && deathTime <= 2)
+        {
+            SmallBubble newSmallBubble = Instantiate(smallBubble);
+            newSmallBubble.transform.position = mouth.position;
+            bubbleTimer = 0;
+        }
+    }
+
+    public void BeginBreathing()
+    {
+        state = State.Breathing;
+        air = 45;
+        body.linearVelocity = new Vector2(0, 0);
+    }
+
+    private void Breathing()
+    {
+        anim.SetBool("breathing", true);
+        anim.SetBool("swimming", false);
+
+        breathingTimer -= Time.deltaTime;
+
+        if (breathingTimer < 0)
+        {
+            state = State.Standard;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (iFrames == false && state != State.HitStun)
+        {
+            if (collision.collider.tag == "Enemy")
+            {
+                KnockBack();
+            }
         }
     }
 }
