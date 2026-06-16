@@ -14,6 +14,9 @@ public class Bubble : MonoBehaviour
     public float speed;
     public SwimmingPlayer player;
 
+    public float amplitude;
+    public float frequency;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,15 +44,27 @@ public class Bubble : MonoBehaviour
 
         else
         {
-            boxCollider.enabled = true;
-            body.linearVelocity = new Vector2(0, speed);
-            anim.SetInteger("state", state);
-            timer -= Time.deltaTime;
-            if (timer < 0 && breaking == false)
+            if (breaking == false)
             {
-                breaking = true;
-                StartCoroutine(BreakBubble());
+                boxCollider.enabled = true;
+                float xSpeed = amplitude * frequency * Mathf.Cos(Time.time * frequency);
+                body.linearVelocity = new Vector2(xSpeed, speed);
+                anim.SetInteger("state", state);
+                timer -= Time.deltaTime;
+
+                if (timer < 0 && breaking == false)
+                {
+                    breaking = true;
+                    body.linearVelocity = new Vector2(0, 0);
+                    StartCoroutine(BreakBubble());
+                }
             }
+
+            else
+            {
+                body.linearVelocity = new Vector2(0, 0);
+            }
+
         }
     }
 
@@ -57,6 +72,7 @@ public class Bubble : MonoBehaviour
     {
         if (collision.gameObject.tag == "Breathing")
         {
+            breaking = true;
             player.BeginBreathing();
             StartCoroutine(BreakBubble());
         }
@@ -64,6 +80,8 @@ public class Bubble : MonoBehaviour
 
     IEnumerator BreakBubble()
     {
+        //body.bodyType = RigidbodyType2D.Static;
+        body.linearVelocity = new Vector2(0, 0);
         anim.SetTrigger("break");
         yield return new WaitForSeconds(0.666f);
         Destroy(gameObject);

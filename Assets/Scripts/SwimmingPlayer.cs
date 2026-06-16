@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class SwimmingPlayer : MonoBehaviour
@@ -41,7 +39,7 @@ public class SwimmingPlayer : MonoBehaviour
     public SmallBubble smallBubble;
     public SmallerBubble smallerBubble;
     public float smallerBubbleTimer;
-
+    public GameManager manager;
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -78,6 +76,7 @@ public class SwimmingPlayer : MonoBehaviour
     private void Movement()
     {
         anim.SetBool("breathing", false);
+        anim.SetBool("drowning", false);
         breathingTimer = breathingTimerMax;
         boxCollider.enabled = true;
         deathTime = 0;
@@ -254,6 +253,7 @@ public class SwimmingPlayer : MonoBehaviour
         if (deathTime >= 3)
         {
             //Debug.Log("Respawn");
+            StartCoroutine(manager.RespawnPlayer());
         }
 
         bubbleTimer += Time.deltaTime;

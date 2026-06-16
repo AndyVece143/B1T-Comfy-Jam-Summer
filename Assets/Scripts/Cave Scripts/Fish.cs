@@ -10,6 +10,7 @@ public class Fish : MonoBehaviour
     public LayerMask groundLayer;
     private bool facingRight = true;
     private Vector2 forwards;
+    public bool sideways;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,21 +27,46 @@ public class Fish : MonoBehaviour
 
     private void Movement()
     {
-        body.linearVelocity = new Vector2(speed, body.linearVelocity.y);
-        if (facingRight)
+        switch (sideways)
         {
-            forwards = Vector2.right;
-        }
-        else
-        {
-            forwards = Vector2.left;
-        }
+            case true:
+                body.linearVelocity = new Vector2(speed, body.linearVelocity.y);
+                if (facingRight)
+                {
+                    forwards = Vector2.right;
+                }
+                else
+                {
+                    forwards = Vector2.left;
+                }
 
-        RaycastHit2D hitWall = Physics2D.Raycast(ledgeDetector.position, forwards, wallDistance, groundLayer);
+                RaycastHit2D hitWall = Physics2D.Raycast(ledgeDetector.position, forwards, wallDistance, groundLayer);
 
-        if (hitWall == true)
-        {
-            Rotate();
+                if (hitWall == true)
+                {
+                    Rotate();
+                }
+                break;
+
+            case false:
+                body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+
+                if (facingRight)
+                {
+                    forwards = Vector2.up;
+                }
+                else
+                {
+                    forwards = Vector2.down;
+                }
+                RaycastHit2D hitWall2 = Physics2D.Raycast(ledgeDetector.position, forwards, wallDistance, groundLayer);
+
+
+                if (hitWall2 == true)
+                {
+                    Rotate();
+                }
+                break;
         }
     }
 

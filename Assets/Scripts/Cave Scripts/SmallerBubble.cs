@@ -6,6 +6,9 @@ public class SmallerBubble : MonoBehaviour
     public float speed;
     public float timer;
 
+    public float amplitude;
+    public float frequency;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +18,8 @@ public class SmallerBubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        body.linearVelocity = new Vector2(0, speed);
+        float xSpeed = amplitude * frequency * Mathf.Cos(Time.time * frequency);
+        body.linearVelocity = new Vector2(xSpeed, speed);
         timer -= Time.deltaTime;
 
         if (timer < 0)

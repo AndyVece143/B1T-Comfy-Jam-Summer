@@ -134,6 +134,8 @@ MonoBehaviour:
   stateTimerMax: 0.4
   state: 0
   anim: {fileID: 7158920190274003959}
+  amplitude: 0.11
+  frequency: 3.82
 --- !u!50 &3566634343201267210
 Rigidbody2D:
   serializedVersion: 5
