@@ -38,6 +38,9 @@ public class SoloBigDialogue : MonoBehaviour
     public ChangingRoom room;
     public float dampSpeed = 7.0f;
 
+    public bool isIntermission;
+    private Intermission intermission;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +59,11 @@ public class SoloBigDialogue : MonoBehaviour
         if (sceneTransition)
         {
             loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
+        }
+
+        if (isIntermission)
+        {
+            intermission = Intermission.FindAnyObjectByType<Intermission>();
         }
 
         BeginningSprite();
@@ -190,12 +198,17 @@ public class SoloBigDialogue : MonoBehaviour
         if (canMove)
         {
             player.StartMoving();
-            mainCamera.state = CameraController.State.FollowPlayer;
+            mainCamera.state = mainCamera.initialState;
         }
 
         if (isChanging)
         {
             room.TriggerChangeClothes();
+        }
+
+        if (isIntermission)
+        {
+            intermission.GoingToTurnOnLights();
         }
 
         Destroy(gameObject);

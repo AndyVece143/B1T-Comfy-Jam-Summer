@@ -160,6 +160,19 @@ public class Player : MonoBehaviour
                 talkIcon.color = Color.gray;
             }
         }
+
+        if (collision.gameObject.tag == "NPC" && state != State.NoMove)
+        {
+            talkIcon.enabled = true;
+            if (collision.gameObject.GetComponent<NPC>().checker == false)
+            {
+                talkIcon.color = Color.white;
+            }
+            else
+            {
+                talkIcon.color = Color.gray;
+            }
+        }
         if (collision.gameObject.tag == "RoomTransition" && state != State.NoMove)
         {
             goIcon.enabled = true;
@@ -172,7 +185,7 @@ public class Player : MonoBehaviour
         {
             inspectIcon.enabled = false;
         }
-        if (collision.gameObject.tag == "Sandwich" || (collision.gameObject.tag == "Bro"))
+        if (collision.gameObject.tag == "Sandwich" || (collision.gameObject.tag == "Bro") || (collision.gameObject.tag == "NPC"))
         {
             talkIcon.enabled = false;
         }

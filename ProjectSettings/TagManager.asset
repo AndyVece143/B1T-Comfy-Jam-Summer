@@ -11,6 +11,7 @@ TagManager:
   - Bro
   - Breathing
   - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX

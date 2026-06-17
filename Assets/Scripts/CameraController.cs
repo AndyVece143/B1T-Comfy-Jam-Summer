@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
         FollowPlayer,
         FollowPlayerSwimming,
         StayStill,
+        FollowPlayerIntermission,
     }
     public State state;
     public State initialState;
@@ -36,6 +37,9 @@ public class CameraController : MonoBehaviour
                 FollowPlayerSwimming();
                 break;
             case State.StayStill:
+                break;
+            case State.FollowPlayerIntermission:
+                FollowPlayerIntermission();
                 break;
         }
     }
@@ -86,6 +90,24 @@ public class CameraController : MonoBehaviour
     private void FollowPlayerSwimming()
     {
         Vector3 targetPosition = player.position + offset;
+
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+    }
+
+    private void FollowPlayerIntermission()
+    {
+        Vector3 targetPosition = player.position + offset;
+        targetPosition.y = 0;
+
+        if (targetPosition.x < 0)
+        {
+            targetPosition.x = 0;
+        }
+
+        if (targetPosition.x > 15.45f)
+        {
+            targetPosition.x = 15.45f;
+        }
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }

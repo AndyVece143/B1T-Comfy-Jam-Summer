@@ -306,7 +306,7 @@ public class BigDialogue : MonoBehaviour
         if (canMove)
         {
             player.StartMoving();
-            mainCamera.state = CameraController.State.FollowPlayer;
+            mainCamera.state = mainCamera.initialState;
         }
 
         if (sandwich)
