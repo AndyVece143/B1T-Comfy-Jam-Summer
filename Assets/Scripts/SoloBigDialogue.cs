@@ -42,6 +42,9 @@ public class SoloBigDialogue : MonoBehaviour
     private Intermission intermission;
     public UICamera uiCamera;
 
+    public bool prePrologue;
+    private PrePrologueManager ppManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,6 +70,11 @@ public class SoloBigDialogue : MonoBehaviour
         if (isIntermission)
         {
             intermission = Intermission.FindAnyObjectByType<Intermission>();
+        }
+
+        if (prePrologue)
+        {
+            ppManager = PrePrologueManager.FindAnyObjectByType<PrePrologueManager>();
         }
 
         BeginningSprite();
@@ -212,6 +220,11 @@ public class SoloBigDialogue : MonoBehaviour
         if (isIntermission)
         {
             intermission.GoingToTurnOnLights();
+        }
+
+        if (prePrologue)
+        {
+            ppManager.GoToNextScene();
         }
 
         Destroy(gameObject);
