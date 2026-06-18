@@ -50,12 +50,16 @@ public class BigDialogue : MonoBehaviour
     public SandwichShop shop;
     public BroTalking bro;
     public float dampSpeed = 7.0f;
+    public bool isBartender;
+    public UICamera uiCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         canvas = GetComponent<Canvas>();
-        canvas.worldCamera = Camera.main;
+        //canvas.worldCamera = Camera.main;
+        uiCamera = UICamera.FindAnyObjectByType<UICamera>();
+        canvas.worldCamera = uiCamera.gameObject.GetComponent<Camera>();
         mainText.text = string.Empty;
         mainCamera = CameraController.FindAnyObjectByType<CameraController>();
         mainCamera.state = CameraController.State.StayStill;
@@ -317,6 +321,11 @@ public class BigDialogue : MonoBehaviour
         if (bro)
         {
             bro.interactable = true;
+        }
+
+        if (isBartender)
+        {
+            StaticData.drankWithBartender1 = true;
         }
 
         Destroy(gameObject);

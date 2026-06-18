@@ -16,6 +16,7 @@ public class Bubble : MonoBehaviour
 
     public float amplitude;
     public float frequency;
+    private bool canBreak = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,6 +53,11 @@ public class Bubble : MonoBehaviour
                 anim.SetInteger("state", state);
                 timer -= Time.deltaTime;
 
+                if (timer < 9)
+                {
+                    canBreak = true;
+                }
+
                 if (timer < 0 && breaking == false)
                 {
                     breaking = true;
@@ -76,6 +82,18 @@ public class Bubble : MonoBehaviour
             player.BeginBreathing();
             StartCoroutine(BreakBubble());
         }
+
+        if (collision.gameObject.layer == 3 && canBreak == true)
+        {
+            breaking = true;
+            StartCoroutine(BreakBubble());
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        breaking = true;
+        StartCoroutine(BreakBubble());
     }
 
     IEnumerator BreakBubble()

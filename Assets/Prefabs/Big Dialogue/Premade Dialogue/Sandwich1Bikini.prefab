@@ -632,6 +632,7 @@ MonoBehaviour:
   shop: {fileID: 0}
   bro: {fileID: 0}
   dampSpeed: 7
+  isBartender: 0
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

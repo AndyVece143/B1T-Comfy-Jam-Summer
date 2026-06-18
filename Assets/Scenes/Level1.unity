@@ -16430,7 +16430,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 37bbfe4d8d7025344918835aab0f3a72, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16576,6 +16576,8 @@ GameObject:
   - component: {fileID: 1470785760}
   - component: {fileID: 1470785758}
   - component: {fileID: 1470785759}
+  - component: {fileID: 1470785762}
+  - component: {fileID: 1470785761}
   m_Layer: 0
   m_Name: UI Camera
   m_TagString: MainCamera
@@ -16693,6 +16695,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1900042868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1470785761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470785757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3c61f00677f194d9c3444ce081dc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AspectRatioUtility
+--- !u!114 &1470785762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470785757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a520fe849bc38c84ba7073997a86e7af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UICamera
 --- !u!1001 &1507686998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92664,7 +92690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ExitTunnel
   boxCollider: {fileID: 1662703563}
   loader: {fileID: 1032859706}
-  sceneName: Prologue
+  sceneName: Intermission1
 --- !u!1 &1728527994
 GameObject:
   m_ObjectHideFlags: 0
@@ -93222,7 +93248,7 @@ Canvas:
   m_GameObject: {fileID: 1949183414}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1470785758}
   m_PlaneDistance: 100
   m_PixelPerfect: 1

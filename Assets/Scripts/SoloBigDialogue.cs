@@ -40,12 +40,15 @@ public class SoloBigDialogue : MonoBehaviour
 
     public bool isIntermission;
     private Intermission intermission;
+    public UICamera uiCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         canvas = GetComponent<Canvas>();
-        canvas.worldCamera = Camera.main;
+        //canvas.worldCamera = Camera.main;
+        uiCamera = UICamera.FindAnyObjectByType<UICamera>();
+        canvas.worldCamera = uiCamera.gameObject.GetComponent<Camera>();
         mainText.text = string.Empty;
         mainCamera = CameraController.FindAnyObjectByType<CameraController>();
         mainCamera.state = CameraController.State.StayStill;

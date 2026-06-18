@@ -25,12 +25,15 @@ public class InspectBox : MonoBehaviour
 
     public RoomTriggerAgain caveEntrance;
     public float dampSpeed = 7.0f;
+    public UICamera uiCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         canvas = GetComponent<Canvas>();
-        canvas.worldCamera = Camera.main;
+        //canvas.worldCamera = Camera.main;
+        uiCamera = UICamera.FindAnyObjectByType<UICamera>();
+        canvas.worldCamera = uiCamera.gameObject.GetComponent<Camera>();
         player = Player.FindAnyObjectByType<Player>();
         mainCamera = CameraController.FindAnyObjectByType<CameraController>();
         textComponent.text = string.Empty;
@@ -48,6 +51,8 @@ public class InspectBox : MonoBehaviour
                 NextLine();
             }
         }
+
+        Debug.Log(textBox.transform.position);
     }
     void StartDialogue()
     {
@@ -83,6 +88,7 @@ public class InspectBox : MonoBehaviour
         else
         {
             textBox.transform.position = new Vector3(textBox.transform.position.x, textBox.transform.position.y + 5.56f, textBox.transform.position.z);
+            //textBox.transform.position = new Vector3(textBox.transform.position.x, textBox.transform.position.y + 490.31f, textBox.transform.position.z);
             textBoxPosition = textBox.transform.position;
             textBox.transform.position = new Vector3(textBox.transform.position.x, textBox.transform.position.y + 5f, textBox.transform.position.z);
             textBoxEndPosition = textBox.transform.position;

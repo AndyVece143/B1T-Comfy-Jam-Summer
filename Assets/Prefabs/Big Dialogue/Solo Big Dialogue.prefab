@@ -379,7 +379,7 @@ Canvas:
   m_GameObject: {fileID: 4976806853408612784}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -460,6 +460,14 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: b67effe301ab3b94da136c7b134946e2, type: 3}
   player: {fileID: 0}
   sceneTransition: 0
+  sceneName: 
+  loader: {fileID: 0}
+  canMove: 0
+  isChanging: 0
+  room: {fileID: 0}
+  dampSpeed: 7
+  isIntermission: 0
+  uiCamera: {fileID: 0}
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

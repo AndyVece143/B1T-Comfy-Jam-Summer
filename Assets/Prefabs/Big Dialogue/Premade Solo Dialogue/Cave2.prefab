@@ -463,10 +463,14 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: b67effe301ab3b94da136c7b134946e2, type: 3}
   player: {fileID: 0}
   sceneTransition: 0
+  sceneName: 
+  loader: {fileID: 0}
   canMove: 1
   isChanging: 0
   room: {fileID: 0}
   dampSpeed: 7
+  isIntermission: 0
+  uiCamera: {fileID: 0}
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

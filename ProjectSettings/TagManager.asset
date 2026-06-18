@@ -12,6 +12,7 @@ TagManager:
   - Breathing
   - Enemy
   - NPC
+  - UICamera
   layers:
   - Default
   - TransparentFX

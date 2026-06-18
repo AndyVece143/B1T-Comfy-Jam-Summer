@@ -202,6 +202,9 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: b67effe301ab3b94da136c7b134946e2, type: 3}
   ready: 0
   mainCamera: {fileID: 0}
+  room: {fileID: 0}
+  caveEntrance: {fileID: 0}
+  dampSpeed: 7
 --- !u!1 &7222659654301041604
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383794522074638752}
   - component: {fileID: 2497169043089252658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7039999059782895936}
   - component: {fileID: 7356675553893366378}
   - component: {fileID: 6683757939358129908}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Orb
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -266,6 +266,7 @@ MonoBehaviour:
   speed: 1
   amplitude: 0.11
   frequency: 3.82
+  startingBoost: 0
 --- !u!50 &6683757939358129908
 Rigidbody2D:
   serializedVersion: 5
