@@ -1794,6 +1794,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1900042869}
   swim: {fileID: 8300000, guid: 62e944f43e99df7408e16215c146ca5f, type: 3}
   drowning: {fileID: 8300000, guid: a252965a7e638d34bb78880da03f9373, type: 3}
+  breathing: {fileID: 8300000, guid: 94e5a07042a6d47498b571c1da1062f4, type: 3}
   breathingTimerMax: 0.5
   iFrames: 0
   hurtSound: {fileID: 8300000, guid: 43164a267628c6e46a8f86d71883f527, type: 3}
@@ -25729,11 +25730,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 37bbfe4d8d7025344918835aab0f3a72, type: 3}
+  m_Resource: {fileID: 8300000, guid: 22a32c5e37ef2644b98baab4eb5540da, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -19,6 +19,9 @@ public class TitleScreen : MonoBehaviour
     {
         Debug.Log(mainTitle.transform.position);
         Debug.Log(credits.transform.position);
+        StaticData.ateSandwich = false;
+        StaticData.beganAtBeginning = false;
+        StaticData.drankWithBartender1 = false;
     }
 
     // Update is called once per frame
@@ -68,7 +71,7 @@ public class TitleScreen : MonoBehaviour
                 loader.LoadNextLevel("Level3");
                 break;
             case 6:
-                loader.LoadNextLevel("Epilogue");
+                loader.LoadNextLevel("Ending");
                 break;
         }
     }

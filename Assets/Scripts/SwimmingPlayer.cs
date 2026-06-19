@@ -26,6 +26,7 @@ public class SwimmingPlayer : MonoBehaviour
     private float deathTime;
     public AudioClip swim;
     public AudioClip drowning;
+    public AudioClip breathing;
     private float breathingTimer;
     public float breathingTimerMax;
 
@@ -33,6 +34,7 @@ public class SwimmingPlayer : MonoBehaviour
     private float iFrameTimer;
     public bool iFrames;
     [SerializeField] private AudioClip hurtSound;
+    
 
     public Transform mouth;
     public float bubbleTimer;
@@ -270,6 +272,7 @@ public class SwimmingPlayer : MonoBehaviour
         state = State.Breathing;
         air = 45;
         body.linearVelocity = new Vector2(0, 0);
+        SoundManager.instance.PlaySound(breathing);
     }
 
     private void Breathing()

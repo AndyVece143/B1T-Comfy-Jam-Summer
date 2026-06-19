@@ -161,7 +161,7 @@ public class InspectBox : MonoBehaviour
         }
 
         player.StartMoving();
-        mainCamera.state = CameraController.State.FollowPlayer;
+        mainCamera.state = mainCamera.initialState;
         Destroy(gameObject);
     }
 }

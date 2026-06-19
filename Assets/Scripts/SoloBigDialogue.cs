@@ -45,6 +45,9 @@ public class SoloBigDialogue : MonoBehaviour
     public bool prePrologue;
     private PrePrologueManager ppManager;
 
+    public bool endingScene;
+    private GoldTrigger goldTrigger;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -75,6 +78,11 @@ public class SoloBigDialogue : MonoBehaviour
         if (prePrologue)
         {
             ppManager = PrePrologueManager.FindAnyObjectByType<PrePrologueManager>();
+        }
+
+        if (endingScene)
+        {
+            goldTrigger = GoldTrigger.FindAnyObjectByType<GoldTrigger>();
         }
 
         BeginningSprite();
@@ -225,6 +233,11 @@ public class SoloBigDialogue : MonoBehaviour
         if (prePrologue)
         {
             ppManager.GoToNextScene();
+        }
+
+        if (endingScene)
+        {
+            goldTrigger.HideGold();
         }
 
         Destroy(gameObject);

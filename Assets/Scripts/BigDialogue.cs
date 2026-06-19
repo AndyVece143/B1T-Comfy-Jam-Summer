@@ -52,6 +52,8 @@ public class BigDialogue : MonoBehaviour
     public float dampSpeed = 7.0f;
     public bool isBartender;
     public UICamera uiCamera;
+    public bool isGuyEnding;
+    private GuyEnding guyEnding;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -69,6 +71,11 @@ public class BigDialogue : MonoBehaviour
         if (sandwich)
         {
             shop = SandwichShop.FindAnyObjectByType<SandwichShop>();
+        }
+
+        if (isGuyEnding)
+        {
+            guyEnding = GuyEnding.FindAnyObjectByType<GuyEnding>();
         }
         BeginningSprite();
         SetPositions();
@@ -326,6 +333,11 @@ public class BigDialogue : MonoBehaviour
         if (isBartender)
         {
             StaticData.drankWithBartender1 = true;
+        }
+
+        if (isGuyEnding)
+        {
+            guyEnding.GetScared();
         }
 
         Destroy(gameObject);
