@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Checkpoint activeCheckpoint;
     public RoomTransition transition;
     public CameraController mainCamera;
+    public Shark shark;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,5 +38,10 @@ public class GameManager : MonoBehaviour
         player.state = SwimmingPlayer.State.Standard;
         player.air = 45;
         mainCamera.state = CameraController.State.FollowPlayerSwimming;
+
+        if (shark)
+        {
+            shark.Respawn();
+        }
     }
 }

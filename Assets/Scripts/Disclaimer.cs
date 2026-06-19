@@ -8,7 +8,7 @@ public class Disclaimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && transform == false)
+        if (Input.GetKeyDown(KeyCode.Space) && transition == false)
         {
             transition = true;
             loader.LoadNextLevel("Title");

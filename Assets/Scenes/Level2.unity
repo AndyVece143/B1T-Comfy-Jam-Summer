@@ -24705,7 +24705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1355237378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143410,7 +143410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ExitTunnel
   boxCollider: {fileID: 1662703563}
   loader: {fileID: 1032859706}
-  sceneName: Intermission1
+  sceneName: Intermission2
 --- !u!1 &1728527994
 GameObject:
   m_ObjectHideFlags: 0
@@ -143494,6 +143494,7 @@ MonoBehaviour:
   activeCheckpoint: {fileID: 0}
   transition: {fileID: 1355237378}
   mainCamera: {fileID: 1900042869}
+  shark: {fileID: 0}
 --- !u!4 &1773591081
 Transform:
   m_ObjectHideFlags: 0
