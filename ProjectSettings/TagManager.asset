@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - NPC
   - UICamera
+  - Bartender2
   layers:
   - Default
   - TransparentFX
