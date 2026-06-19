@@ -577,12 +577,12 @@ MonoBehaviour:
   - 'It sure is. Anyway, are you interested in any sandwiches? '
   - I am. Just give me another second to look at the menu.
   - (Let's see... ham sandwich, peanut butter jelly sandwich, BLT...)
-  - (Oh! They have a placeholder sandwich! Perfect.)
-  - I'll take a placeholder sandwich please.
-  - One placeholder sandwich, coming up!
+  - (Oh! They have a philly cheesesteak! Perfect.)
+  - I'll take a philly cheesesteak please.
+  - One philly cheesesteak, coming up!
   - Here's the money, and a little tip for you. Buy yourself something nice.
   - Thanks! You're awfully nice, lady!
-  - ...and here we go! One placeholder sandwich for you!
+  - ...and here we go! One philly cheesesteak for you!
   - Thank you! Don't mind if I do!
   - '*Om nom nom nom*'
   - This is delicious! Thank you.
@@ -633,6 +633,7 @@ MonoBehaviour:
   bro: {fileID: 0}
   dampSpeed: 7
   isBartender: 0
+  uiCamera: {fileID: 0}
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0
