@@ -15,6 +15,7 @@ TagManager:
   - UICamera
   - Bartender2
   - Shark
+  - LackOfBeef
   layers:
   - Default
   - TransparentFX

@@ -567,7 +567,7 @@ MonoBehaviour:
   - Don't call me that. And no, I haven't gotten changed yet, I'm still looking around.
   - All good, all good. You should get ready as soon as you can, or else someone
     may get to the prize before you!
-  - Well I certainly can't let that happe. I'll be back shortly.
+  - Well I certainly can't let that happen. I'll be back shortly.
   textSpeed: 0.01
   talkChanges: 00010101
   emotionChanges: 00000000030000000200000000000000
@@ -595,6 +595,8 @@ MonoBehaviour:
   bro: {fileID: 0}
   dampSpeed: 7
   isBartender: 0
+  uiCamera: {fileID: 0}
+  isGuyEnding: 0
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

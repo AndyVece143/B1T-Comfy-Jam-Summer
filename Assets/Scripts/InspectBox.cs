@@ -27,6 +27,8 @@ public class InspectBox : MonoBehaviour
     public float dampSpeed = 7.0f;
     public UICamera uiCamera;
 
+    public LackOfBeef lackOfBeef;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -148,6 +150,11 @@ public class InspectBox : MonoBehaviour
         if (interactableObject)
         {
             interactableObject.interactable = true;
+        }
+
+        if (lackOfBeef)
+        {
+            lackOfBeef.interactable = true;
         }
 
         if (room)

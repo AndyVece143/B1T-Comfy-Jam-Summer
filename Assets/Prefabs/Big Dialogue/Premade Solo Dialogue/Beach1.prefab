@@ -449,9 +449,10 @@ MonoBehaviour:
   nameText: {fileID: 4649970021668359451}
   lines:
   - 'Alright, the beach! I finally made it! This is gonna be great! '
+  - It looks like I am the first one to arrive. I am early, after all.
   - Let's have a look around first. This place seems interesting.
   textSpeed: 0.01
-  emotionChanges: 0100000000000000
+  emotionChanges: 010000000700000000000000
   canvas: {fileID: 0}
   character1: {fileID: 8589296088205470195}
   duration: 0.2
@@ -470,6 +471,8 @@ MonoBehaviour:
   dampSpeed: 7
   isIntermission: 0
   uiCamera: {fileID: 0}
+  prePrologue: 0
+  endingScene: 0
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

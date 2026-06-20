@@ -22,6 +22,7 @@ public class TitleScreen : MonoBehaviour
         StaticData.ateSandwich = false;
         StaticData.beganAtBeginning = false;
         StaticData.drankWithBartender1 = false;
+        StaticData.beefLacking = false;
     }
 
     // Update is called once per frame

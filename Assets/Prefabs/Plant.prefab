@@ -195,7 +195,7 @@ MonoBehaviour:
   anim: {fileID: 9044016063798467248}
   orbSpawn: {fileID: 5545040652444523350}
   orbSpawn2: {fileID: 5723961292842839592}
-  timerMax: 4
+  timerMax: 7
   firing: 0
   orb: {fileID: 7356675553893366378, guid: f8453f2368183fa489a8399d01a60f87, type: 3}
   speed: 0

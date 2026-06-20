@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 2cc83ff526c67174487ed847db588a16
+guid: 0a250ead5efa7f0469767e347bbb6b0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3848807772915031606
-    second: fakefish 1_0
+      213: 8437460098600170688
+    second: lackofbeef_0
+  - first:
+      213: 6930359996918917289
+    second: lackofbeef_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fakefish 1_0
+      name: lackofbeef_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 124
-        height: 42
+        x: 1
+        y: 1
+        width: 62
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac123aee8b9469ac0800000000000000
-      internalID: -3848807772915031606
+      spriteID: 0c4789f8141e71570800000000000000
+      internalID: 8437460098600170688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lackofbeef_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8ede5d2b59d2060800000000000000
+      internalID: 6930359996918917289
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 02757a36672fa4b459e238ed55c9b864
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +171,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":44.0},"gridSpriteOffset":{"x":1.0,"y":1.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      fakefish 1_0: -3848807772915031606
+      lackofbeef_0: 8437460098600170688
+      lackofbeef_1: 6930359996918917289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

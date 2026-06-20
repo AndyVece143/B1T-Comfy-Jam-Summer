@@ -448,8 +448,8 @@ MonoBehaviour:
   mainText: {fileID: 1064707185611743288}
   nameText: {fileID: 4649970021668359451}
   lines:
-  - This elevator looks like it leads back to the surface
-  - Alright, time to dicth this cave!
+  - This elevator looks like it leads back to the surface.
+  - Alright, time to ditch this cave!
   textSpeed: 0.01
   emotionChanges: 0000000001000000
   canvas: {fileID: 0}
@@ -471,6 +471,7 @@ MonoBehaviour:
   isIntermission: 0
   uiCamera: {fileID: 0}
   prePrologue: 0
+  endingScene: 0
 --- !u!1 &5780813498153750811
 GameObject:
   m_ObjectHideFlags: 0

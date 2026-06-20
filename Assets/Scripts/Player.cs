@@ -136,6 +136,21 @@ public class Player : MonoBehaviour
                 inspectIcon.color = Color.gray;
             }
         }
+        if (collision.gameObject.tag == "LackOfBeef" && state != State.NoMove)
+        {
+            inspectIcon.enabled = true;
+
+            if (collision.gameObject.GetComponent<LackOfBeef>().checker == false)
+            {
+                inspectIcon.color = Color.white;
+            }
+            else
+            {
+                inspectIcon.color = Color.gray;
+            }
+        }
+
+
         if (collision.gameObject.tag == "Sandwich" && state != State.NoMove)
         {
             talkIcon.enabled = true;
@@ -193,7 +208,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Inspect" || collision.gameObject.tag == "Inspect2")
+        if (collision.gameObject.tag == "Inspect" || collision.gameObject.tag == "Inspect2" ||collision.gameObject.tag == "LackOfBeef")
         {
             inspectIcon.enabled = false;
         }

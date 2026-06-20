@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2cc83ff526c67174487ed847db588a16
+guid: f74b3d4bc344e77429709a2687dfdb82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3848807772915031606
-    second: fakefish 1_0
+      213: -4071151858297330370
+    second: regularsign_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fakefish 1_0
+      name: regularsign_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 124
-        height: 42
+        width: 39
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac123aee8b9469ac0800000000000000
-      internalID: -3848807772915031606
+      spriteID: e35248b64fc5087c0800000000000000
+      internalID: -4071151858297330370
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fakefish 1_0: -3848807772915031606
+      regularsign_0: -4071151858297330370
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
